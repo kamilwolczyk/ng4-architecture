@@ -13,14 +13,14 @@
         "favicon.ico"
       ],
       "index": "index.html",
-      "main": "site-admin/main.ts",
+      "main": "site-public/main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "site-admin/styles.scss"
+        "site-public/styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
