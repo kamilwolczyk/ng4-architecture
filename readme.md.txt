@@ -1,0 +1,1 @@
+Architecture for the Angular 4 advanced application
