@@ -1,3 +1,4 @@
+import { MenuItem } from './menu-item';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  title: string;
+  menuItems: MenuItem[];
 
-  constructor() { }
+  constructor() {
+    this.title = "Ng4 Application";
+    this.menuItems = [
+      new MenuItem('/home', 'Home', 'home'),
+      new MenuItem('/calculator', 'Calculator', 'calculator'),
+    ];
+  }
 
   ngOnInit() {
   }

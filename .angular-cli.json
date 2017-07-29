@@ -24,6 +24,8 @@
         "site-public/styles.scss"        
       ],
       "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../libs/semantic/semantic.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

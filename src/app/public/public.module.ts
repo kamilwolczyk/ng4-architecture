@@ -5,14 +5,15 @@ import { RoutingModule } from './routing/routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { MainComponent } from './main/main.component';
 
+
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
   ],
   imports: [
     BrowserModule,
     RoutingModule,
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [MainComponent]
