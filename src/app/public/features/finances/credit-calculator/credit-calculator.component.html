@@ -1,3 +1,28 @@
-<p>
-  credit-calculator works!
-</p>
+<form [formGroup]="creditDetailsForm" (ngSubmit)="calculate(creditDetailsForm.value)" novalidate>
+
+  <md-input-container>
+    <input mdInput type="number" placeholder="Amount" [formControl]="creditDetailsForm.controls['amount']" min="0">
+  </md-input-container>
+  <md-input-container>
+    <input mdInput type="number" placeholder="Months" [formControl]="creditDetailsForm.controls['months']" min="0">
+  </md-input-container>
+
+  <input md-button type="submit" value="Recalculate">
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Debt payment</th>
+      <th>Remaining debt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let report of calculationResult; let number = index">
+      <td>{{number+1}}</td>
+      <td>{{report.debtRepayment}}</td>
+      <td>{{report.remainingDebt}}</td>
+    </tr>
+  </tbody>
+</table>

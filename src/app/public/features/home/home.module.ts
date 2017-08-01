@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { NgSemanticModule } from "ng-semantic";
 
+import { AppCommonModule } from '../../../app-common/app-common.module';
 import { IntroductionComponent } from './introduction/introduction.component';
 
 @NgModule({
   imports: [
-    CommonModule,
-    NgSemanticModule
+    AppCommonModule
   ],
   declarations: [
     IntroductionComponent

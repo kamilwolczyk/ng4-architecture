@@ -1,9 +1,19 @@
-<!--<app-header></app-header>-->
+<md-sidenav-container class="container">
 
-<app-navigation></app-navigation>
+  <md-sidenav #sidenav>
+    Jolly good!
+    <app-navigation></app-navigation>
+  </md-sidenav>
 
-<app-content>
-  <router-outlet></router-outlet>
-</app-content>
+  <div>
+    <app-header>
+      <button type="button" md-raised-button (click)="sidenav.open()">Open sidenav</button>
+    </app-header>
 
-<app-footer></app-footer>
+    <app-content>
+      <router-outlet></router-outlet>
+    </app-content>
+
+  </div>
+
+</md-sidenav-container>

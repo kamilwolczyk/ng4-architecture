@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { NgSemanticModule } from "ng-semantic";
+import { RouterModule } from "@angular/router";
+import { MdToolbarModule } from "@angular/material";
+
+import { AppCommonModule } from '../../app-common/app-common.module';
 
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { AccessDeniedComponent } from './error-pages/access-denied/access-denied.component';
@@ -8,13 +10,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
-import { RouterModule } from "@angular/router";
 
 @NgModule({
   imports: [
-    CommonModule,
-    RouterModule,    
-    NgSemanticModule
+    RouterModule,
+    AppCommonModule,
+    MdToolbarModule
   ],
   exports: [
     AccessDeniedComponent,

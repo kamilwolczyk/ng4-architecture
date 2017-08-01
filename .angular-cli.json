@@ -20,12 +20,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../libs/semantic/semantic.min.css",
+        "../node_modules/normalize.css/normalize.css",
         "site-public/styles.scss"        
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js",
-        "../libs/semantic/semantic.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -1,4 +1,9 @@
-<header>
-  <h1>{{title}}</h1>
-  <h2>{{app}}</h2>
-</header>
+<md-toolbar color="primary">
+  <span>  {{title}}</span>
+
+  <span class="fill-remaining-space"></span>
+
+  <span>
+      <ng-content></ng-content>
+    </span>
+</md-toolbar>

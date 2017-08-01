@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
   title: string;
@@ -11,6 +11,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.app = "Public app";
-    this.title = "Advanced front-end app architecture";
+    this.title = "Ng4 Application";
   }
 }

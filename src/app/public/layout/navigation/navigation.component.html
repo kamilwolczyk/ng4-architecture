@@ -1,11 +1,5 @@
-<sm-menu title="Ng4 Architecture" class="inverted teal">
-  <sm-menu class="menu right secondary">
-    <a sm-item icon="sidebar" (click)="invertedSidebar.show({transition: 'overlay'})"></a>
-  </sm-menu>
-</sm-menu>
-
-<sm-sidebar class="left vertical inverted sidebar icon menu" #invertedSidebar>        
-    <a sm-item [routerLink]="menuItem.url" [icon]="menuItem.icon" *ngFor="let menuItem of menuItems" (click)="invertedSidebar.hide({transition: 'overlay'})">
+<nav>
+    <a [routerLink]="menuItem.url" *ngFor="let menuItem of menuItems">
         {{menuItem.displayName}}
     </a>
-</sm-sidebar>
+</nav>
