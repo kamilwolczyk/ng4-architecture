@@ -1,0 +1,13 @@
+<form [formGroup]="counterForm" (submit)="selectDate(counterForm.value)" *ngIf="!remainingTime">
+  <md-input-container>
+    <input mdInput [mdDatepicker]="picker" placeholder="Początek urlopu" [formControl]="counterForm.controls['startDate']">
+    <button mdSuffix [mdDatepickerToggle]="picker"></button>
+  </md-input-container>
+  <md-datepicker #picker></md-datepicker>
+  <button mg-button type="submit">Go</button>
+</form>
+
+<div *ngIf="remainingTime">
+  <h2>Do urlopu pozostało:</h2>
+  <h1>{{remainingTime.hours}} h : {{remainingTime.minutes}} m : {{remainingTime.seconds}} s</h1>
+</div>

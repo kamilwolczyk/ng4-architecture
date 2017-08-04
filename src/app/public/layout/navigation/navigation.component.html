@@ -1,5 +1,9 @@
 <nav>
-    <a [routerLink]="menuItem.url" *ngFor="let menuItem of menuItems">
+  <ul class="main-nav">
+    <li *ngFor="let menuItem of menuItems">
+      <a [routerLink]="menuItem.url" class="mat-navigation__link">
         {{menuItem.displayName}}
-    </a>
+      </a>
+    </li>  
+  </ul>
 </nav>

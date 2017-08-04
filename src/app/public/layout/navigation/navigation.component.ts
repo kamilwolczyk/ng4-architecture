@@ -11,10 +11,11 @@ export class NavigationComponent implements OnInit {
   menuItems: MenuItem[];
 
   constructor() {
-    this.title = "Ng4 Application";
+    this.title = 'Ng4 Application';
     this.menuItems = [
       new MenuItem('/home', 'Home', 'home'),
       new MenuItem('/calculator', 'Calculator', 'calculator'),
+      new MenuItem('/counters', 'Counters', 'counter'),
     ];
   }
 

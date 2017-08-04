@@ -1,11 +1,11 @@
-import { CreditMonthReport } from '../../../../domain/finances/credit-month-report';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from "@angular/forms";
-import { CreditCalculatorService } from "../../../../domain/finances/credit-calculator.service";
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { CreditMonthReport } from '../../../../domain/finances/credit-month-report';
+import { CreditCalculatorService } from '../../../../domain/finances/credit-calculator.service';
 
 export interface CreditDetailsFormValue {
   amount: number;
-  months: number
+  months: number;
 }
 
 @Component({
@@ -28,6 +28,6 @@ export class CreditCalculatorComponent implements OnInit {
   }
 
   calculate(value: CreditDetailsFormValue): void {
-    this.calculationResult = this.calculator.recalculateCredit(value.amount, value.months);
+    this.calculationResult = this.calculator.recalculateCredit(value.amount, value.months, new Date(), 4);
   }
 }

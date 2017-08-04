@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from "@angular/router";
-import { MdToolbarModule } from "@angular/material";
+import { RouterModule } from '@angular/router';
+import { MdToolbarModule, MdMenuModule } from '@angular/material';
 
 import { AppCommonModule } from '../../app-common/app-common.module';
 
@@ -15,7 +15,8 @@ import { ContentComponent } from './content/content.component';
   imports: [
     RouterModule,
     AppCommonModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdMenuModule
   ],
   exports: [
     AccessDeniedComponent,

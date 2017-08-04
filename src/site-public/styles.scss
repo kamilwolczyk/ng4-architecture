@@ -1,7 +1,12 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 body {
-    font-family: 'Vollkorn', serif;
-    margin-bottom: 60px;
-    overflow: hidden;
+  font-family: 'Vollkorn', serif;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.content-viewer {
+  margin: 0 auto;
+  max-width: 940px;
 }

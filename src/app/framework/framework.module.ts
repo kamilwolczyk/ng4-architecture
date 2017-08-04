@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NumberExtensionsService } from './extensions/number-extensions.service';
+import { DateExtensionsService } from './extensions/date-extensions.service';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: []
+  providers: [
+    NumberExtensionsService,
+    DateExtensionsService
+  ]
 })
 export class FrameworkModule { }
