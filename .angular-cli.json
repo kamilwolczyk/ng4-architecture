@@ -21,6 +21,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/normalize.css/normalize.css",
+        "site-public/custom-material-theme.scss",   
         "site-public/styles.scss"        
       ],
       "scripts": [

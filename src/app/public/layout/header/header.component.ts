@@ -7,10 +7,9 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HeaderComponent implements OnInit {
   title: string;
-  app: string;
+  currentTime: Date;
 
   ngOnInit() {
-    this.app = "Public app";
-    this.title = "Ng4 Application";
+    this.title = "Ng4 Architecture";
   }
 }

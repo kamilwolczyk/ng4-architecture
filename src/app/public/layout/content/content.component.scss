@@ -1,4 +1,12 @@
-.content-viewer {
-  margin: 0 auto;
-  max-width: 940px;
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+.empty {
+    flex-grow: 1;
+}
+
+.content {
+    flex-grow: 4;    
 }

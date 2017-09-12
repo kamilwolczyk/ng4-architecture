@@ -1,9 +1,6 @@
 <md-toolbar color="primary">
-  <span>{{title}}</span>
-
+  <ng-content></ng-content>
+  <span class="title">{{title}}</span>
   <span class="fill-remaining-space"></span>
-
-  <span>
-    <ng-content></ng-content>
-  </span>
+  <span>{{currentTime}}</span>
 </md-toolbar>

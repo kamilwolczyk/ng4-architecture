@@ -1,0 +1,18 @@
+.calculator{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  form{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    td, th{
+      border: solid 1px silver;
+    }
+  }
+}
